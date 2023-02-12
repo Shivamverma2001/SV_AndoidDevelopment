@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item>
+    <shape>
+        <gradient android:angle="@android:integer/config_longAnimTime" android:startColor="#3709DF" android:endColor="#2AC6AF" android:type="linear"></gradient>
+    </shape>
+</item>
+</selector>

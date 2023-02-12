@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/we4"
+    android:layout_height="match_parent"
+    tools:context=".ca2weather3">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:text="Sign Up"
+        android:textAlignment="center"
+        android:textColor="@color/purple_500"
+        android:textSize="50dp"
+        android:textStyle="italic|bold"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:text="Name"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="20dp"
+            android:textStyle="italic"></TextView>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="69dp"
+            android:layout_marginRight="10dp"
+            android:focusedByDefault="true"
+            android:hint="Enter your name"
+            android:includeFontPadding="true"
+            android:inputType="text"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="@color/black"></EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:text="Email"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="20dp"
+            android:textStyle="italic"></TextView>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="72dp"
+            android:layout_marginRight="10dp"
+            android:includeFontPadding="true"
+            android:inputType="textEmailAddress"
+            android:hint="Enter your Email"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="@color/black"></EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:text="Password"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="20dp"
+            android:textStyle="italic"></TextView>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="10dp"
+            android:includeFontPadding="true"
+            android:hint="Password"
+            android:inputType="numberPassword"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="@color/black"></EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:text="Date Of Birth"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="20dp"
+            android:textStyle="italic"></TextView>
+
+        <EditText
+            android:id="@+id/dob"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:includeFontPadding="true"
+            android:inputType="date"
+            android:text=""
+            android:hint="Enter your DOB"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="@color/black"></EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginRight="20dp"
+            android:text="Select your Gender"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="20dp"
+            android:textStyle="italic"></TextView>
+
+        <RadioGroup
+            android:id="@+id/rg1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/r1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textColor="@color/black"
+                android:textColorLink="@color/black"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/r2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Female"
+                android:textColor="@color/black"></RadioButton>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Country"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="20dp"
+            android:textStyle="italic"></TextView>
+
+        <Spinner
+            android:id="@+id/s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:spinnerMode="dialog"
+            android:textAlignment="center"></Spinner>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@android:color/holo_blue_bright"
+            android:text="Submit"
+            android:textAlignment="center"
+            app:icon="@drawable/drawable"></Button>
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="100dp"
+            android:backgroundTint="@android:color/holo_blue_bright"
+            android:text="Reset"
+            android:textAlignment="center"></Button>
+    </LinearLayout>
+
+
+
+</LinearLayout>

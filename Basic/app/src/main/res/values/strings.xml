@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Basic</string>
+    <string name="title_activity_c8regformradiobtn">c8regformradiobtn</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_c14imagebtn">c14imagebtn</string>
+    <string name="title_activity_c16main">c16main</string>
+    <string name="title_activity_c16sweet">c16sweet</string>
+    <string name="title_activity_c16payment">c16payment</string>
+    <string name="title_activity_c16thankyou">c16thankyou</string>
+    <string name="title_activity_c12_book_my_show4">c12BookMyShow4</string>
+    <string name="title_activity_ca2weather2">ca2weather2</string>
+    <string name="title_activity_ca2weather3">ca2weather3</string>
+    <string name="title_activity_c20_alert_button">c20AlertButton</string>
+    <string name="title_activity_practice">Practice</string>
+    <string name="title_activity_c27_snackbar">c27Snackbar</string>
+</resources>

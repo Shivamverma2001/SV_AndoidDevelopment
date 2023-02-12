@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/we3"
+    android:layout_height="match_parent"
+    tools:context=".ca2weather2">
+    <TextView
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:layout_width="match_parent"
+        android:text="Weather Forecast"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content">
+    </TextView>
+    <ImageButton
+        android:id="@+id/i1"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="40dp"
+        android:layout_width="wrap_content"
+        android:src="@drawable/we2"
+        android:layout_height="wrap_content"></ImageButton>
+
+
+</LinearLayout>

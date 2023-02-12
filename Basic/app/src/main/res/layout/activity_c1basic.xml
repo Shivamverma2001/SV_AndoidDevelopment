@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".c1basic">
+    <EditText
+        android:id="@+id/edt_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Name"
+        android:padding="15dp"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="326dp" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_marginTop="48dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:backgroundTint="#E50AE8"
+        android:gravity="center"
+        />
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Previous"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="433dp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:layout_marginLeft="50dp"
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            tools:layout_editor_absoluteX="220dp"
+            tools:layout_editor_absoluteY="429dp"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+</LinearLayout>
