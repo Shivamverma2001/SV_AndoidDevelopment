@@ -9,4 +9,8 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_c4_job_scheduler">c4_Job_Scheduler</string>
+    <string name="title_activity_c42">c4_2</string>
+    <string name="title_activity_c7_rate">c7_rate</string>
+    <string name="title_activity_c8_custom_toast">c8_CustomToast</string>
 </resources>
