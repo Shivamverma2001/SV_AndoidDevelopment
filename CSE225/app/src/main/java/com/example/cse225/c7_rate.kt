@@ -1,6 +1,9 @@
 package com.example.cse225
 
 import android.os.Bundle
+import android.widget.Button
+import android.widget.RatingBar
+import android.widget.Toast
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -10,31 +13,24 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import com.example.cse225.databinding.ActivityC7RateBinding
 
 class c7_rate : AppCompatActivity() {
-
-    private lateinit var appBarConfiguration: AppBarConfiguration
-    private lateinit var binding: ActivityC7RateBinding
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_c7_rate)
 
-        binding = ActivityC7RateBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        val simpleRatingBar = findViewById<RatingBar>(R.id.simpleRatingBar)
+        val simpleRating = findViewById<RatingBar>(R.id.simpleRating)
+        val submitButton = findViewById<Button>(R.id.submitButton)
 
-        setSupportActionBar(binding.toolbar)
-
-        val navController = findNavController(R.id.nav_host_fragment_content_c7_rate)
-        appBarConfiguration = AppBarConfiguration(navController.graph)
-        setupActionBarWithNavController(navController, appBarConfiguration)
-
-        binding.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
+        submitButton.setOnClickListener {
+            val totalStars = "Total Stars: " + simpleRatingBar.numStars
+            val rating = "Rating: " + simpleRatingBar.rating
+            Toast.makeText(this, """ $totalStars$rating""".trimIndent(),
+                Toast.LENGTH_LONG).show()
         }
-    }
 
-    override fun onSupportNavigateUp(): Boolean {
-        val navController = findNavController(R.id.nav_host_fragment_content_c7_rate)
-        return navController.navigateUp(appBarConfiguration)
-                || super.onSupportNavigateUp()
+        simpleRating.setOnRatingBarChangeListener{ ratingBar, rating, fromUser ->
+            Toast.makeText(this, "rating $rating, $fromUser",
+                Toast.LENGTH_LONG).show()
+        }
     }
 }

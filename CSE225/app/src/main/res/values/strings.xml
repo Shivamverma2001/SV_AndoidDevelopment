@@ -13,4 +13,5 @@
     <string name="title_activity_c42">c4_2</string>
     <string name="title_activity_c7_rate">c7_rate</string>
     <string name="title_activity_c8_custom_toast">c8_CustomToast</string>
+    <string name="title_activity_c11_time_picker_dialog">c11_TimePickerDialog</string>
 </resources>

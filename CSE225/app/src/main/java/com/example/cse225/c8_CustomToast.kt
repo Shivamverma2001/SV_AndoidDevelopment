@@ -36,7 +36,8 @@ class c8_CustomToast : AppCompatActivity() {
             val toast = Toast(applicationContext)
             toast.setGravity(Gravity.CENTER_VERTICAL,0,100)
             toast.setView(layout)
-            toast.duration = Toast.LENGTH_LONG+ toast.show()
+            toast.duration = Toast.LENGTH_LONG
+            toast.show()
         }
     }
 }
