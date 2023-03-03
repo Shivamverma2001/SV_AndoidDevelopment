@@ -15,6 +15,5 @@ class c9_SplashScreen : AppCompatActivity() {
                 val i = Intent(this, c9_2::class.java)
                 startActivity(i)
                 finish() },5000 )
-
     }
 }

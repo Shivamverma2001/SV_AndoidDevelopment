@@ -28,7 +28,6 @@ class c16_ProgressBar : AppCompatActivity() {
         val btnR = findViewById<Button>(R.id.btnReset)
 
         pgsBar1.visibility = View.INVISIBLE
-
         btn.setOnClickListener {
             pgsBar1.visibility = View.VISIBLE
             i= pgsBar.progress
@@ -51,7 +50,6 @@ class c16_ProgressBar : AppCompatActivity() {
                 }
             }.start()
         }
-
         btnR.setOnClickListener {
             pgsBar.progress = 0
             txtView.text = 0.toString() + "/" + pgsBar.max

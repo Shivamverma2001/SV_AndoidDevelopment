@@ -33,7 +33,7 @@ class c15_Notification : AppCompatActivity() {
     private val channelId="My Channel Id"
     private val description="Test Notification"
     private val title="Notification"
-    val mKey="Remote Key"
+    val myKey="Remote Key"
     val notificationId=1234
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,19 +42,19 @@ class c15_Notification : AppCompatActivity() {
         notificationManager=getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
         btnNotify.setOnClickListener {
             val intent =Intent(this, c15_b::class.java)
-            pendingIntent=PendingIntent.getActivity(this,0,intent,PendingIntent.FLAG_IMMUTABLE)
+            pendingIntent=PendingIntent.getActivity(this,0,intent,PendingIntent.FLAG_MUTABLE)
             soundUri= Uri.parse(ContentResolver.SCHEME_ANDROID_RESOURCE+"://"+applicationContext.packageName+"/"+R.raw.ringtone)
             audioAttr=AudioAttributes.Builder()
                 .setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION)
                 .setUsage(AudioAttributes.USAGE_NOTIFICATION)
                 .build()
-            //remoteCollapsedViews= RemoteViews(packageName,R.layout.activity_c92)
-            //remoteCollapsedViews=RemoteViews(packageName,R.layout.activity_c9_splash_screen)
+            remoteCollapsedViews= RemoteViews(packageName,R.layout.activity_c92)
+            remoteCollapsedViews=RemoteViews(packageName,R.layout.activity_c9_splash_screen)
             myNotificationChannel()
-            /*remoteInput=RemoteInput.Builder(myKey).setLabel("Replying...").build()
+            remoteInput=RemoteInput.Builder(myKey).setLabel("Replying...").build()
             val action:Notification.Action=Notification.Action.Builder(R.drawable.check,"Reply",pendingIntent)
                 .addRemoteInput(remoteInput).build()
-            builder.addAction(action)*/
+            builder.addAction(action)
             notificationManager.notify(notificationId,builder.build())
         }
     }

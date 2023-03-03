@@ -15,4 +15,7 @@
     <string name="title_activity_c8_custom_toast">c8_CustomToast</string>
     <string name="title_activity_c11_time_picker_dialog">c11_TimePickerDialog</string>
     <string name="title_activity_c16_progress_bar">c16_ProgressBar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_c19_fragment_static_prac">c19_FragmentStaticPrac</string>
 </resources>
