@@ -18,6 +18,7 @@ class c19_a : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         v= inflater.inflate(R.layout.fragment_c19_a, container, false)
+        init(container)
         return v
     }
     private  lateinit var buttonListener: c19_staticInterface
@@ -32,14 +33,22 @@ class c19_a : Fragment() {
             }
     }
     private fun init(root:ViewGroup?){
-        val but: Button =v.findViewById(R.id.b1)
-        val clear: Button =v.findViewById(R.id.b2)
-        Toast.makeText(context,"init", Toast.LENGTH_LONG).show()
-        but.setOnClickListener{
+        val blue: Button =v.findViewById(R.id.blue)
+        val red: Button =v.findViewById(R.id.red)
+        val green: Button =v.findViewById(R.id.green)
+        val yellow: Button =v.findViewById(R.id.cyan)
+        Toast.makeText(context,"init",Toast.LENGTH_LONG).show()
+        blue.setOnClickListener{
+            buttonListener.onButtonPressed(Color.BLUE)
+        }
+        red.setOnClickListener{
             buttonListener.onButtonPressed(Color.RED)
         }
-        clear.setOnClickListener{
-            buttonListener.onButtonPressed("")
+        green.setOnClickListener{
+            buttonListener.onButtonPressed(Color.GREEN)
+        }
+        yellow.setOnClickListener{
+            buttonListener.onButtonPressed(Color.CYAN)
         }
     }
 }

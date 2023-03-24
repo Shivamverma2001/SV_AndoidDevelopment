@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#FFEB3B"
     android:layout_width="match_parent"
-    android:id="@+id/c19View"
+    android:background="@color/purple_200"
     android:layout_height="match_parent"
-    tools:context=".c19_b">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/ll"
-        android:orientation="horizontal"></LinearLayout>
+    tools:context=".c22_f2">
 
     <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Fragment 2" />
 
 </FrameLayout>

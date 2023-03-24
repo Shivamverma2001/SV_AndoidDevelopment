@@ -4,18 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".c19_FragmentStaticPrac">
 <fragment
     android:id="@+id/f1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:name="com.example.cse225.c19_a"
     android:layout_weight="1"></fragment>
     <fragment
         android:id="@+id/f2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:name="com.example.cse225.c19_a"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.cse225.c19_b"
         android:layout_weight="1">
     </fragment>
 

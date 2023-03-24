@@ -7,18 +7,12 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
-import com.example.cse225.databinding.ActivityC19FragmentStaticPracBinding
+import com.example.cse225.databinding.ActivityC20CompleteFragmentBinding
 
-class c19_FragmentStaticPrac : AppCompatActivity(),c19_staticInterface {
-
+class c20_completeFragment : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_c19_fragment_static_prac)
+        setContentView(R.layout.activity_c20_complete_fragment)
     }
-    override fun onButtonPressed(msg: Int) {
-        var obj=supportFragmentManager.findFragmentById(R.id.f2) as c19_b
-        obj.onFragmentInteraction(msg)
-    }
-
 }

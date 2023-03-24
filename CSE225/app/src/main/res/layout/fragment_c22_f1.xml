@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BD1515"
+    tools:context=".c22_f1">
+
+    <!-- TODO: Update blank fragment layout -->
+    <EditText
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/edtText"
+        android:textSize="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="First Fragment" />
+
+</FrameLayout>

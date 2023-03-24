@@ -31,15 +31,15 @@
         android:orientation="vertical"
         android:layout_height="wrap_content">
         <Button
-            android:id="@+id/pink"
+            android:id="@+id/green"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Pink"></Button>
+            android:text="Green"></Button>
         <Button
-            android:id="@+id/yellow"
+            android:id="@+id/cyan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Yellow"></Button>
+            android:text="Cyan"></Button>
     </LinearLayout>
     </LinearLayout>
 

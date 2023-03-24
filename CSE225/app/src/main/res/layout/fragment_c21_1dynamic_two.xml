@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_200"
+    tools:context=".c21_1dynamicTwo">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:textSize="100px"
+        android:layout_height="match_parent"
+        android:text="Second Fragment" />
+
+</FrameLayout>
