@@ -14,7 +14,7 @@ import android.widget.EditText
 class c22_f1 : Fragment() {
     lateinit var edtText: EditText
     lateinit var msg:String
-    lateinit var comm:onDataListener
+    //lateinit var comm:onDataListener
     @SuppressLint("MissingInflatedId")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -27,7 +27,7 @@ class c22_f1 : Fragment() {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
             override fun afterTextChanged(s: Editable) {
-                comm.communicate(edtText.text.toString())
+               // comm.communicate(edtText.text.toString())
             }
         })
         return v
@@ -35,6 +35,6 @@ class c22_f1 : Fragment() {
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
-        comm=context as onDataListener
+        //comm=context as onDataListener
     }
 }

@@ -3,16 +3,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/teal_200"
+    android:id="@+id/fr_portrait"
+    android:background="#f00"
+    android:padding="15dp"
     tools:context=".c21_1dynamicTwo">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="100dp"
+        android:id="@+id/vname"
         android:layout_width="match_parent"
-        android:textSize="100px"
-        android:layout_height="match_parent"
-        android:text="Second Fragment" />
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/round_border"
+        android:padding="15dp"
+        android:inputType="text"
+        android:hint="name" />
 
 </FrameLayout>

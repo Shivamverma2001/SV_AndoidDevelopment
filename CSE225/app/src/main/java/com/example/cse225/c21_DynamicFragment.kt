@@ -28,5 +28,7 @@ class c21_DynamicFragment : AppCompatActivity() {
         }
         fragmentTransaction.commit()
     }
-
+//    override fun sendData(data: String) {
+//
+//    }
 }

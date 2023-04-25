@@ -23,4 +23,5 @@
     <string name="title_activity_c22_dynamic_fragment_intent_data_transfer">
         c22_DynamicFragmentIntentDataTransfer
     </string>
+    <string name="title_activity_c231_text_view_custom">c23_1TextViewCustom</string>
 </resources>
